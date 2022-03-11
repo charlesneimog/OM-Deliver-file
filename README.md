@@ -1,4 +1,4 @@
 # OM-Deliver-file
 
 
-How to make it work!
+This will make possible to open OM-Sharp patches from Windows Explorer. I explain how to configure it in https://www.youtube.com/watch?v=VPVr6Vrsu-I.
