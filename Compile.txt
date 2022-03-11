@@ -1,0 +1,1 @@
+pyinstaller --noconsole --onefile --icon om-patch.ico om-deliver-file.py
