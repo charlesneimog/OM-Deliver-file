@@ -20,17 +20,17 @@ def stop_server(arg1, arg2):
     server.shutdown()
 
 if running:
-    client = udp_client.SimpleUDPClient("127.0.0.1", 3000)
+    client = udp_client.SimpleUDPClient("127.0.0.1", 3003)
     client.send_message("/file", pathname)
     time.sleep(1)
 
 else:
     _thread.start_new_thread(open_om_sharp, ())
-    receiver = udp_client.SimpleUDPClient("127.0.0.1", 3000)
+    receiver = udp_client.SimpleUDPClient("127.0.0.1", 3003)
     dispatcher = dispatcher.Dispatcher()
     server = osc_server.ThreadingOSCUDPServer(("127.0.0.1", 9000), dispatcher)
     dispatcher.map("/send", stop_server)
     server.serve_forever()
-    client = udp_client.SimpleUDPClient("127.0.0.1", 3000)
+    client = udp_client.SimpleUDPClient("127.0.0.1", 3003)
     client.send_message("/file", pathname)
     time.sleep(1)
