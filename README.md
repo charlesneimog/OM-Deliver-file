@@ -1,5 +1,6 @@
 # OM-Deliver-file
 
+## [Download](https://github.com/charlesneimog/OM-Deliver-file/releases/download/v.0.0.2/Open-Patches.zip)
 
 This will make possible to open OM-Sharp patches from Windows Explorer. I explain how to configure it in https://www.youtube.com/watch?v=VPVr6Vrsu-I.
 
